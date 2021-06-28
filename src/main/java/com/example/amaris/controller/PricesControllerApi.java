@@ -19,7 +19,6 @@ public interface PricesControllerApi{
     public ResponseEntity<PricesResponse> getPrice(@NotNull @PathVariable("brandId") Integer brandId,
             @NotNull @PathVariable("productId") Integer productId,
             @NotNull @PathVariable(value="timedate")  @DateTimeFormat(pattern = "yyyy-MM-dd-HH.mm.ss") LocalDateTime timedate );
-            //@DateTimeFormat(pattern = "yyyy-MM-dd-HH:mm:ss")  LocalDateTime date );
 
 
 }
